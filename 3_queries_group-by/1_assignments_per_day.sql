@@ -1,4 +1,4 @@
-SELECT assignments.day as day, count(assignments.*) as total_assignments
+SELECT day, count(*) as total_assignments
 FROM assignments
-GROUP BY assignments.day
+GROUP BY day
 ORDER BY day;
